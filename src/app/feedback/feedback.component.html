@@ -1,0 +1,13 @@
+<h1>Feedback</h1>
+<form class="formt" name="ff" id="ff" method="post" #myform="ngForm" (ngSubmit)="saveForm(myform.value)">
+<input type="radio" id="good" name="fb" value="Good" ngModel>
+<label for="good">Good</label><br>
+<input type="radio" id="bad" name="fb" value="Bad" ngModel>
+<label for="bad">Bad</label><br>
+<input type="radio" id="average" name="fb" value="Average" ngModel>
+<label for="average">Average</label><br><br>
+
+<label for="comments">Comments:</label><br><br>
+<input type="text" id="comments" name="comments" ngModel><br><br>
+<button type="submit" name="submit">Submit</button>
+</form>
